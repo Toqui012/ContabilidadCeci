@@ -1,0 +1,82 @@
+*{
+    font-family: sans-serif ;
+}   
+
+body{
+    overflow-x: hidden;
+}
+
+
+.wrapper{
+    background: #eeeeee;
+    color: #596275;
+}
+
+#navbarPrincipal{
+    background-color: #f5f6fa;
+}
+
+
+.objeto:hover{
+    transition: 0.2s;
+}
+
+.nav-item{
+    font-size: 18px;
+}
+
+#imgLogo{
+    width: 100%;
+    height: 100%;
+}
+
+
+li , a{
+    cursor: pointer;
+    list-style-type: none;
+}
+
+
+.imgBackground{
+    width: 100%;
+}
+
+.iconSocial{
+    padding-left: 4vh;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.contactHeader{
+    font-size: 18px;
+}
+
+#servicePreview{
+    font-size: 1.23rem;
+    color: #596275;
+    text-align: center;
+}
+
+#previewMision{
+    text-align: center;
+    /* background: #d35200; */
+    background: #f1f2f6;
+    
+    color: #596275;
+    padding: 85px;
+}
+
+#previewVision{
+    text-align: center;
+    /* background: #e67e22; */
+    background: #dfe4ea;
+    color: #596275;
+    padding: 85px;
+}
+
+#sectionPrincipal{
+    background-color: #eeeeee;
+}
+
+
+
