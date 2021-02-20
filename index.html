@@ -11,94 +11,71 @@
 </head>
 <body>
 
-        <!-- Envoltorio pagina -->
-    <div class="wrapper encabezado">
-        <div class="container">
-            <div class="container justify-content-center">
-                <div class="row">
-                    <div class="col-md-4">
-
-                        <div class="row p-5 contactHeader">
-                            <a class="iconSocial nav-hover" href="#">
-                                <i class="fa fa-2x fa-facebook-square" aria-hidden="true">Facebook</i>
-                            </a>
-            
-                            <a class="iconSocial nav-hover" href="#">
-                                <i class="fa fa-2x fa-instagram" aria-hidden="true">Instagram</i>
-                            </a>
-            
-                            <a class="iconSocial nav-hover" href="#">
-                                <i class="fa fa-2x fa-whatsapp" aria-hidden="true">Whatsapp</i>
-                            </a>
-                        </div>
-                        
-                        
-                    </div>
-                
-
-                    <div class="col-md-4">
-                            <img class="container" sid="imgLogo" src="assets/Logo.png" alt="imagen_logo">
-                    </div>
-                    
-
-                    <div class="col-md-4 contactHeader">
-                        <div class="container mt-5">
-                            <li class="nav-hover d-inline"><a href="#"></a>+56995657367</li>
-                            <li class="nav-hover d-inline"><a href="#"></a>alvaroseba2000@gmail.com</li>
-                        </div>
-                       
-                    </div>
-
-                </div>
+    <div class="row">
+        <div class="col-md-12 p-2 contenedorEncabezado" style="border: solid 1px blue;">
+            <div class="container-fluid">
+                <img src="assets/Logo.png" class="mx-auto d-flex p-2" id="imgLogo" alt="logoPortada">
             </div>
+
+            <!-- <div class="contactContainer container-fluid" style="border: solid 1px violet;">
+                <li class="nav-hover fa fa-envelope p-2"><a href="#"></a> alvaroseba2000@gmail.com</li>
+                <li class="nav-hover fa fa-phone p-2"><a href="#"></a> +56995657367</li>
+            </div> -->
+            
         </div>
+
+
+     
+    </div>
+      
+
+
+    <!-- Contendedor Nav -->
+    <div class="wrapper-nav">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbarPrincipal">
+            
+            <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+
+                    <li class="nav-item active">
+                        <a class="nav-link nav-hover" href="#">Inicio <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <div class="dropdown-menu nav-hover" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-hover" href="#">Contable Tributario</a>
+                            <a class="dropdown-item nav-hover" href="#">Recursos Humanos</a>
+                            <a class="dropdown-item nav-hover" href="#">Auditoria</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="#">Noticias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-hover" href="#">Nuestra Empresa</a>
+                    </li>
+                    
+                </ul>
+            </div>
     </div>
 
 
-        <!-- Contendedor Nav -->
-        <div class="wrapper-nav">
-            <nav class="navbar navbar-expand-lg navbar-light" id="navbarPrincipal">
-               
-                <button class="navbar-toggler m-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto ">
-
-                        <li class="nav-item active">
-                            <a class="nav-link nav-hover" href="#">Inicio <span class="sr-only"></span></a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-hover" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Servicios
-                            </a>
-                            <div class="dropdown-menu nav-hover" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item nav-hover" href="#">Contable Tributario</a>
-                              <a class="dropdown-item nav-hover" href="#">Recursos Humanos</a>
-                              <a class="dropdown-item nav-hover" href="#">Auditoria</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#">Noticias</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link nav-hover" href="#">Contacto</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            
-        </div>
-
-       <div class="wrapper">
-
             <div class="row" id="sectionPrincipal">
-                <div class="col-md-12">
-                    <img src="assets/pikachu_imagen.jpg" alt="" class="imgBackground">
+                <div class="col" style="border: solid 1px brown;">
+                    <img src="assets/imagen 1.png" class="img-fluid" alt="Responsive image" style="width: 100%; height: 60vh;">
                 </div>
                 <div class="col-md-12 align-self-center pt-5 pb-5" id="servicePreview" >
                     <div class="container col-md-5">
@@ -111,25 +88,32 @@
     
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-6" id="previewMision">
-                        <h2>Nuestra Misión</h2>
+                    <div class="col-md-4" id="previewMision">
+                        <h2>Confianza</h2>
 
-                        <div class="container text-center pt-3">
+                        <div class="container-fluid text-center pt-3">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas in odit voluptates officia culpa modi eum commodi totam dolore! Adipisci nostrum veniam voluptates ratione maxime, voluptatum blanditiis inventore quibusdam molestias?</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6" id="previewVision">
-                        <h2>Nuestra Visión</h2>
+                    <div class="col-md-4" id="previewVision">
+                        <h2>Compromiso</h2>
 
-                        <div class="container text-center pt-3">
+                        <div class="container-fluid text-center pt-3">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi provident laudantium earum, voluptatem non reprehenderit soluta deserunt, dolorum accusamus unde numquam quaerat, similique corporis. Rerum ullam voluptates perspiciatis modi tenetur!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" id="previewVision">
+                        <h2>Vigente</h2>
+
+                        <div class="container-fluid text-center pt-3">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi provident laudantium earum, voluptatem non reprehenderit soluta deserunt, dolorum accusamus unde numquam quaerat, similique corporis. Rerum ullam voluptates perspiciatis modi tenetur!</p>
                         </div>
                     </div>
                 </div>
                 
             </div>
-        </div>
 
 
         <div class="col-md-12 bg-dark" style="color: white;">
@@ -210,7 +194,7 @@
                 <!-- Footer Links -->
             
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3 bg-primary">© 2020 Copyright:
+                <div class="footer-copyright text-center py-3 bg-dark">© 2020 Copyright:
                 <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                 </div>
                 <!-- Copyright -->
