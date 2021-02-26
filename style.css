@@ -1,9 +1,13 @@
 *{
     font-family: sans-serif ;
+    padding: 0;
+    margin: 0;
 }   
 
 body{
     overflow-x: hidden;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -24,12 +28,10 @@ body{
 
 
 #imgLogo{
-    width: 20vh;
-    height: auto;
+    width: 22vh;
     background: white;
     border-radius: 4px;
     box-shadow: 35px 16px 10px -7px rgba(51, 51, 51, 0.4);
-    transition: 0.5s;   
 }
 
 .contactContainer{
@@ -44,16 +46,11 @@ li , a{
     list-style-type: none;
 }
 
-
-.imgBackground{
-    width: 100%;
-    align-self: center;
-}
-
 #servicePreview{
     font-size: 1.23rem;
     color: #596275;
     text-align: center;
+    margin-top: 10%;
 }
 
 #previewMision{
@@ -73,18 +70,100 @@ li , a{
     padding: 85px;
 }
 
-#sectionPrincipal{
-    background-color: #eeeeee;
-}
+
 
 .contenedorEncabezado{
     background: linear-gradient(-120deg, #c0392b,#f1c40f,#c0392b);  
 }
 
-#logoCentral{
+.content-wrapper{
+    width: 95%;
+    margin: 0px 2.5% 5% 2.5%;
+}
+
+.content-wrapper img{
     width: 100%;
-    height: 75vh;
+    opacity: 0.5;
+}
+
+.text-wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: -40%;
+    margin-bottom: 27%;
+    box-shadow: 35px 40px 15px -8px rgba(51, 51, 51, 0.4);
+    background: linear-gradient(-120deg, #c0392b,#f1c40f,#c0392b);  
+    opacity: 0.9;
+    padding: 7%;
+    border-radius: 10px;
 }
 
 
+.text-wrapper blockquote{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
 
+.btnContactNow{
+    background: #c0392b;
+    color: #fff;
+    width: 240px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+    margin: 10%;
+    border: none;
+    border-radius: 12px;
+}
+
+.btnContactNow:focus{
+    outline: none;
+}
+
+.btnContactNow:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.btnContactNow:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+
+.btnContactNow:hover{
+    background: #ffa502;
+    cursor: pointer;
+}
+
+.btnContactNow:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: 0.7s;
+}
+
+.btnContactNow:hover:after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.7s;
+}
