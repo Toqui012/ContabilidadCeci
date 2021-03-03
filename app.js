@@ -13,8 +13,8 @@ function pintar(){
         _navItem.addEventListener("mouseleave",() => 
         {
             console.log("Movimiento Afuera")
-            _navItem.style.transition = "0.4s"
-            _navItem.style.color = "#596275"
+            _navItem.style.transition = "0.3s"
+            _navItem.style.color = "rgba(0,0,0,.55)";
         })
 
     })
