@@ -199,7 +199,7 @@ li , a{
     margin-top: -40%;
     margin-bottom: 27%;
     box-shadow: 35px 40px 15px -8px rgba(51, 51, 51, 0.4);
-    background: linear-gradient(-120deg, #c0392b,#f1c40f,#c0392b);  
+    background-color: #e58e26; 
     opacity: 0.9;
     padding: 7%;
     border-radius: 7px;
