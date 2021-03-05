@@ -148,11 +148,9 @@ nav {
 
 
 #imgLogo{
-    width: 20vh;
-    background: white;
-    border-radius: 3px;
-    box-shadow: 35px 16px 10px -7px rgba(51, 51, 51, 0.4);
-    margin: 2vh;
+    width: 30vh;
+    transform: translateX(-5vh);
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 728px){
