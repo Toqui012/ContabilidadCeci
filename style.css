@@ -155,6 +155,13 @@ nav {
     margin: 2vh;
 }
 
+@media screen and (max-width: 728px){
+    #imgLogo{
+        width: 15vh;
+        align-items: center;
+    }
+}
+
 
 li , a{
     cursor: pointer;
