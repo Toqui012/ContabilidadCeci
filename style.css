@@ -400,11 +400,19 @@ nav {
 .site-footer
 {
   background-color: #e58e26;
-  padding:45px 0 20px;
+  padding:10px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#eceeef;
 }
+
+@media screen and (max-width: 1024px){
+    .img-fluid .logo-container{
+        width: 24vh;
+        transform: translateX(25vw);
+    }
+}
+
 .site-footer hr
 {
   border-top-color:#bbb;
