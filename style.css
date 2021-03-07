@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-weight: lighter;
 }   
 
 body{
@@ -12,9 +13,7 @@ body{
 }
 
 
-
 /* Sección Nav */
-
 
 nav {
     position: fixed;
@@ -24,7 +23,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #e58e26;  
+    background-color: #e69626;  
     font-family: sans-serif;
     z-index: 2;
 }
@@ -52,8 +51,8 @@ nav {
     color: rgb(226, 226, 226);
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: lighter;
+    font-size: 18px;
 }
 
 .nav-links a:hover{
@@ -86,7 +85,7 @@ nav {
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 103%;
+        height: 100%;
         top: 0;
         background: #F79F1F;
         display: flex;
@@ -164,8 +163,6 @@ nav {
 }
 
 
-
-
 .contenedorEncabezado{
     background: linear-gradient(-120deg, #c0392b,#f1c40f,#c0392b);  
 }
@@ -199,7 +196,7 @@ nav {
     margin-top: -40%;
     margin-bottom: 27%;
     box-shadow: 35px 40px 15px -8px rgba(51, 51, 51, 0.4);
-    background-color: #e58e26; 
+    background-color: #f39c12; 
     opacity: 0.9;
     padding: 7%;
     border-radius: 7px;
@@ -344,12 +341,12 @@ nav {
 }
 
 .container-card .box:nth-child(2) .icon{
-    box-shadow: 0 0 0 0 #f3532b;
-    background: #f3532b;
+    box-shadow: 0 0 0 0 #e67e22;
+    background: #e67e22;
 }
 
 .container-card .box:nth-child(2):hover .icon{
-    box-shadow: 0 0 0 400px #f3532b;
+    box-shadow: 0 0 0 400px #e67e22;
 }
 
 .container-card .box:nth-child(3) .icon{
@@ -396,10 +393,11 @@ nav {
 }
 
 
+
 /* Footer Code */
 .site-footer
 {
-  background-color: #e58e26;
+  background-color: #e69626;
   padding:10px 0 20px;
   font-size:15px;
   line-height:24px;

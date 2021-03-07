@@ -1,25 +1,4 @@
-function pintar(){
 
-    const _navItems = document.querySelectorAll(".nav-hover");
-    _navItems.forEach(_navItem =>  {
-        
-        _navItem.addEventListener("mouseenter",() =>
-        {
-            console.log("Movimiento Mouse")
-            _navItem.style.color = "#e74c3c";
-        
-        })
-
-        _navItem.addEventListener("mouseleave",() => 
-        {
-            console.log("Movimiento Afuera")
-            _navItem.style.transition = "0.3s"
-            _navItem.style.color = "red";
-        })
-
-    })
-
-}
 
 function navSlide() {
     const burger = document.querySelector(".burger");
@@ -52,7 +31,6 @@ function caca(){
 
 
 navSlide();
-pintar()
 
 
 // selector.addEventListener("mouseenter",() =>
