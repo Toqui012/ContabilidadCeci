@@ -24,13 +24,13 @@ function navSlide() {
 }
 
 
-
 function caca(){
     console.log("hola")
 }
 
 
 navSlide();
+
 
 
 // selector.addEventListener("mouseenter",() =>
