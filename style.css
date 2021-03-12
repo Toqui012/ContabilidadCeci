@@ -185,9 +185,7 @@ nav {
 
     .content-wrapper{
         width: 100%;
-        padding-top: 10%;
         margin: 0px 2.5% 0% 2.5%;
-        margin-top: 10%;
         transform: translateX(-1vh);
     }
 }
@@ -200,7 +198,7 @@ nav {
 .text-wrapper{
     width: 100%;
     position: relative;
-    margin-top: -40%;
+    margin-top: -42%;
     margin-bottom: 27%;
     box-shadow: 35px 40px 15px -8px rgba(51, 51, 51, 0.4);
     background-color: #f39c12; 
