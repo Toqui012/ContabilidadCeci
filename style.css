@@ -23,13 +23,13 @@ body{
 /* Sección Nav */
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 6vh;
     background-color: #e69626;  
     font-family: sans-serif;
     z-index: 2;
@@ -156,7 +156,7 @@ nav {
 
 
 #imgLogo{
-    width: 30vh;
+    width: 20vh;
     transform: translateX(-5vh);
     padding-bottom: 5px;
     padding-top: 5px;
