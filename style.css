@@ -301,12 +301,12 @@ nav {
 
 
 .container-card .box:nth-child(1) .icon{
-    box-shadow: 0 0 0 0 #eb2f06;
-    background: #eb2f06;
+    box-shadow: 0 0 0 0 #ffa502;
+    background: #ffa502;
 }
 
 .container-card .box:nth-child(1):hover .icon{
-    box-shadow: 0 0 0 400px #eb2f06;
+    box-shadow: 0 0 0 400px #ffa502;
 }
 
 .container-card .box:nth-child(2) .icon{
