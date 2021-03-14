@@ -28,6 +28,17 @@ function caca(){
     console.log("hola")
 }
 
+function changeText(){
+    const hoverList = document.querySelectorAll("wrapper-list ul li:hover::before");
+    const colorText = document.querySelectorAll("wrapper-list ul li p");
+
+    hoverList.addEventListener("click", () => {
+        colorText.style = "color: #fff";
+    });
+
+
+}
+
 
 navSlide();
 

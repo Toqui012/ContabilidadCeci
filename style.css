@@ -30,7 +30,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 6vh;
-    background-color: #4bc1fb;  
+    background: #fab520;
     font-family: sans-serif;
     z-index: 2;
 }
@@ -55,7 +55,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgb(226, 226, 226);
+    color: #eee;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
@@ -96,7 +96,7 @@ nav {
         right: 0px;
         height: 100%;
         top: 0;
-        background: #0097e6;
+        background: #fab520;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -280,6 +280,8 @@ nav {
     transition: 0.7s;
 }
 
+/* code card */
+
 .wrapper-card{
     display: flex;
     padding: 0;
@@ -295,47 +297,6 @@ nav {
     width: 100%;
     padding: 0;
     margin: 0;
-}
-
-.container-card .box{
-    position: relative;
-    width: 350px;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-    border-radius: 4px;
-    margin: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-align: center;
-}
-
-.container-card .box::before{
-    content: '';
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(255, 255, 255, .2);
-    z-index: 1;
-    pointer-events: none;
-}
-
-.container-card .box .icon{
-    position: relative;
-    width: 80px;
-    height: 80px;
-    color: #fff;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 50%;
-    font-size: 40px;
-    font-weight: 700;
-    transition: 1s;
 }
 
 
@@ -365,6 +326,7 @@ nav {
 .container-card .box:nth-child(3):hover .icon{
     box-shadow: 0 0 0 400px #ffa502;
 }
+
 
 .container-card .box .content-card{
     position: relative;
@@ -400,16 +362,91 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
+/* code start card design */
+.container-card .box-default{
+  position: relative;
+  width: 350px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container-card .box-default::before{
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .2);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container-card .box-default .icon{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.container-card .box-default .icon{
+  box-shadow: 0 0 0 0 #e67e22;
+  background: #e67e22;
+}
+
+.container-card .box-default:hover .icon{
+  box-shadow: 0 0 0 400px #e67e22;
+}
+
+.container-card .box-default .content-card{
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container-card .box-default:hover .content-card{
+  color: #fff;
+
+}
+
+.container-card .box-default .content-card h3{
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.container-card .box-default .content-card p{
+  margin: 0;
+  padding: 0;
+}
+
+/* end code design */
+
 
 
 /* Footer Code */
 .site-footer
 {
-  background-color: #4bc1fb;  
+  background: #fab520;
   padding:10px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#eceeef;
+  color: #eee;
   width: 100%;
 }
 
@@ -439,7 +476,7 @@ nav {
 }
 .site-footer a
 {
-  color:#737373;
+  color: #636e72;
 }
 .site-footer a:hover
 {
@@ -586,4 +623,83 @@ nav {
   }
   
 /* End Code Card */
+
+/* Code List */
+  /* .wrapper-list{
+    padding: 40px;
+    background-color: #182b2c;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  }
+
+  .wrapper-list h2{
+    color: #95a5a6;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+  }
+
+  .wrapper-list ul{
+    position: relative;
+  }
+
+  .wrapper-list ul li{
+    position: relative;
+    list-style: none;
+    display: table;
+    margin: 10px 0;
+    padding-left: 34px;
+    padding-right: 5px;
+  }
+
+  .wrapper-list ul li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    background: transparent;
+    border-radius: 34px;
+    transition: background 0.5s, width 0.5s;
+    transition-delay: 0.5s,0s;
+    border: 2px solid #e67e22;
+    box-sizing: border-box;
+  }
+
+  .wrapper-list ul li::after{
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+
+  .wrapper-list ul li:hover::after{
+    left: 24px;
+    transition-delay: 0.5s;
+    transform: rotate(45deg) scale(1.5);
+  }
+
+  .wrapper-list ul li:hover::before{
+    width: 100%;
+    background: #e67e22;
+    transition-delay: 0s, 0.5s;
+  }
+
+  .wrapper-list ul li p{
+    position: relative;
+    padding: 5px 10px; 
+    color: #636e72;
+  } */
+
+
+/* End Code List */
 
