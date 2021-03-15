@@ -64,6 +64,7 @@ nav {
 }
 
 .nav-links a:hover{
+  transition: .2s;
     color: white;
 }
 
