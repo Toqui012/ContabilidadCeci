@@ -11,36 +11,67 @@
     <title>Cypconsultores</title>
 </head>
 <body>
-    <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-md-4 m-3 headerLogo">
-                    <img class="container-fluid" id="imgLogo" src="assets/Logo.png" alt="">
-                </div>
-                <div class="col-md-2 headerContact d-flex align-content-center flex-wrap" style="visibility: hidden;">
-                    <i class="fa fa-mobile fa-2x" aria-hidden="true"></i><p> +56 9 9297 6775</p> 
-                </div>
-                <div class="col-md-2 headerContact d-flex align-content-center flex-wrap" style="visibility: hidden;">
-                    <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
-                    <p> cypconsultores@gmail.com</p> 
-                </div>
-                                
-            </div>
-    </div>
 
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html"><strong>Inicio</strong> </a></li>
-            <li><a href="services.html"><strong>Servicios</strong></a></li>
-            <li><a href="nuestraEmpresa.html"><strong>Nuestra Empresa</strong></a></li>
-            <li><a href="#"><strong>Noticias</strong></a></li>
-            <li><a href="#"><strong>Contacto</strong></a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+    <header>
+        <div class="main-heading row">
+            <div class="col-md-4 align-self-center">
+                <i class="fa fa-envelope" aria-hidden="true"></i> cypconsultores@gmail.com<p></p>
+            </div>
+
+            <div class="col-md-4 p-3">
+                <img class="p-3" src="assets/Logo.png" id="logoNav" alt="">
+            </div>
+
+            <div class="col-md-4 align-self-center">
+                <i class="fa fa-mobile" aria-hidden="true"></i> +56 9 9297 6775<p></p>
+            </div>
         </div>
-    </nav>
+    </header>
+    
+      <div class="desktop-nav">
+          <div class="d-flex justify-content-center"> 
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li class="drop-down"><a href="#">Servicios <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="#">Asesorías Contables</a></li>
+                            <li><a href="#">Asesorías Tributarias</a></li>
+                            <li><a href="#">Recursos Humanos</a></li>
+                            <li><a href="#">Auditorías</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nuestra Empresa</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+          </div>
+      </div>
+    
+      <div id="toggle-nav">+</div>
+    
+      <div class="mobile-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="m-drop-down"><a href="#">Courses <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">App Dev</a></li>
+              <li><a href="#">Web Dev</a></li>
+              <li><a href="#">Unity Game Dev</a></li>
+            </ul>
+          </li>
+          <li class="m-drop-down"><a href="#">Downloads <i class="fas fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iOS</a></li>
+              <li><a href="#">PS4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    
 
         <div class="content-wrapper"> 
             <img src="assets/imagen 1.png" class="img-fluid" alt="imagenLogoCentral">
