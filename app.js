@@ -1,29 +1,4 @@
 
-
-function navSlide() {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
-    const navLinks = document.querySelectorAll(".nav-links li");
-    
-    burger.addEventListener("click", () => {
-        //Toggle Nav
-        nav.classList.toggle("nav-active");
-        
-        //Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = ""
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-            }
-        });
-        //Burger Animation
-        burger.classList.toggle("toggle");
-    });
-    
-}
-
-
 function caca(){
     console.log("hola")
 }
@@ -35,12 +10,66 @@ function changeText(){
     hoverList.addEventListener("click", () => {
         colorText.style = "color: #fff";
     });
-
-
 }
 
 
-navSlide();
+
+
+// Desktop Nav
+
+const parent = document.querySelectorAll(".drop-down");
+const nav = document.querySelector("nav");
+
+for (let i = 0; i < parent.length; i++) {
+  parent[i].addEventListener("click", function () {
+    let ddStatus = parent[i].childNodes[2].style.display;
+
+    if (ddStatus === "flex") {
+      parent[i].childNodes[2].style.display = "none";
+    } else {
+      closeAll(parent);
+      parent[i].childNodes[2].style.display = "flex";
+      parent[i].childNodes[2].style.padding = 0;
+    }
+  })
+}
+
+function closeAll(arg) {
+  for (let i = 0; i < arg.length; i++) {
+    arg[i].childNodes[2].style.display = "none";
+  }
+}
+
+document.addEventListener("click", function (e) {
+  if (!nav.contains(e.target)) {
+    closeAll(parent);
+  }
+})
+
+// Mobile Nav
+
+const mParent = document.querySelectorAll(".mobile-nav .m-drop-down");
+const mNav = document.querySelector(".mobile-nav");
+const toggleNav = document.getElementById("toggle-nav");
+
+for (let i = 0; i < mParent.length; i++) {
+  mParent[i].addEventListener("click", function () {
+    let ddStatus = mParent[i].childNodes[2].style.display;
+
+    if (ddStatus === "block") {
+      mParent[i].childNodes[2].style.display = "none";
+    } else {
+      closeAll(mParent);
+      mParent[i].childNodes[2].style.display = "block";
+    }
+  })
+}
+
+toggleNav.addEventListener("click", function () {
+  mNav.classList.toggle("open");
+  toggleNav.classList.toggle("open");
+})
+
 
 
 
