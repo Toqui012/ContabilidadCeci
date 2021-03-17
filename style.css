@@ -22,6 +22,14 @@ body{
 
 /* Sección Nav */
 
+.mainHeader{
+  background-color: blue ;
+}
+
+.mainHeader i{
+  font-size: 30px !important;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -114,6 +122,7 @@ nav {
         display: block;
         cursor: pointer;
         z-index: 3;
+        transform: translateX(18vh);
     }
 }
 
@@ -157,17 +166,23 @@ nav {
 }
 
 
+
 #imgLogo{
-    width: 25vh;
-    transform: translateX(-5vh);
-    padding-bottom: 5px;
-    padding-top: 5px;
+    width: 100%;
+    max-width: 350px;
+    
 }
 
 @media screen and (max-width: 1024px){
+
+    .headerLogo{
+      transform: translateX(0);
+    }
+
     #imgLogo{
-        width: 18vh;
-        align-items: center;
+        width: 100%;
+        max-width: 250px;
+        transform: translateX(10vh) !important;
     }
 }
 
