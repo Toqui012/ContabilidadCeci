@@ -36,14 +36,15 @@ header {
   text-align: center;
   font-size:20px;
   font-weight:bold;
-  background-color: #faac1a !important;
+  background-color: #e99a08 !important;
   margin: 0 !important;
+  color: #eee;
 }
 
 .desktop-nav {
   width: 100vw;
   height:51px;
-  background: #fbbe3a;
+  background: #fbba2b;
 }
 
 nav ul {
