@@ -12,28 +12,69 @@
 </head>
 <body>
 
-    <!-- Code Nav -->
-    <nav>
-        <div class="logo">
-            <div class="container-fluid">
-                <img src="assets/Logo.png" class="img-fluid mx-auto d-flex" id="imgLogo" alt="logoPortada">
+    <header>
+        <div class="main-heading row">
+            <div class="col-md-4 align-self-center">
+                <i class="fa fa-envelope fa-1x" aria-hidden="true"></i> cypconsultores@gmail.com<p></p>
+            </div>
+
+            <div class="col-md-4 p-3">
+                <img class="p-3" src="assets/Logo.png" id="logoNav" alt="">
+            </div>
+
+            <div class="col-md-4 align-self-center">
+                <i class="fa fa-mobile fa-2x" aria-hidden="true"></i> +56 9 9297 6775<p></p>
             </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html"><strong>Inicio</strong> </a></li>
-            <li><a href="services.html"><strong>Servicios</strong></a></li>
-            <li><a href="nuestraEmpresa.html"><strong>Nuestra Empresa</strong></a></li>
-            <li><a href="#"><strong>Noticias</strong></a></li>
-            <li><a href="#"><strong>Contacto</strong></a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    </header>
+    
+    
+      <div class="desktop-nav">
+          <div class="d-flex justify-content-center"> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="drop-down"><a href="#">Servicios <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><a href="services.html">Asesorías Contables</a></li>
+                            <li><a href="services.html">Asesorías Tributarias</a></li>
+                            <li><a href="services.html">Recursos Humanos</a></li>
+                            <li><a href="services.html">Auditorías</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="nuestraEmpresa.html">Nuestra Empresa</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+          </div>
+      </div>
+    
 
-    <!-- End Code Nav -->
+      <!-- Code Hamburger -->
+      <div class="hamburgerMenu" id="toggle-nav" onclick="effectHamburger(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>        
+        <div class="bar3"></div>
+      </div>
+    
+      <div class="mobile-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="m-drop-down"><a href="#">Servicios <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <ul>
+              <li><a href="services.html">Asesorías Contables</a></li>
+              <li><a href="services.html">Asesorías Tributarias</a></li>
+              <li><a href="services.html">Recursos Humanos</a></li>
+              <li><a href="services.html">Auditorías</a></li>
+            </ul>
+            <li><a href="nuestraEmpresa.html">Nuestra Empresa</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Contacto</a></li>
+          </li>
+        </ul>
+      </div>
+
 
     <div class="col text-center m-2">
         <h5 class="display-6 text-center header-services">Servicios</h5>
@@ -41,7 +82,7 @@
                
     
 
-    <div class="row">
+    <div class="row" style="overflow-x: hidden !important;">
         <div class="col-sm-12 col-md-6 card text-white pb-4 container rounded p-4 list-asesory">
             <h2>Asesorías contables y tributarias</h2>
             <div class="list-group text-justify">

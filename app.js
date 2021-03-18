@@ -71,6 +71,10 @@ toggleNav.addEventListener("click", function () {
 })
 
 
+function effectHamburger(x){
+  x.classList.toggle("change");
+}
+
 
 
 // selector.addEventListener("mouseenter",() =>
