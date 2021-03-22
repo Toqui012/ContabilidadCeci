@@ -674,3 +674,70 @@ i {
   }
   
 /* End code */
+
+
+/* Form Contact US code style */
+
+.wrapper-form{
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+}
+
+
+.contact-form{
+  width: 100%;
+  max-width: 100%;
+  background: #f1f1f1;
+  padding: 50px 50px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000b3;
+  background: #f6bb4d;
+}
+.contact-form h1{
+  margin-top: 0;
+  font-weight: 200;
+  color: #eee;
+}
+.txtb{
+  border:1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: #dfe6e9
+}
+.txtb label{
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #84817a;
+}
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.btn{
+  display: inline-block;
+  background: #f39c12 !important; 
+  padding: 14px ;
+  color: #f1f1f1 !important;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.btn:hover{
+  background: #e08e0a !important;
+  transition: .2s;
+}
+
+/* End Code */
